@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { Container, Typography, Grid, FormControl, InputLabel, Select, MenuItem, TextField, Button, FormHelperText } from '@mui/material'
 import ImageCarousel from '../../components/carousel/carousel'
 import { AddShoppingCart } from '@mui/icons-material'
+import styles from './ProductDetail.module.css'
 
 const ProductDetail = () => {
 
@@ -89,9 +90,10 @@ const ProductDetail = () => {
                     <ImageCarousel images={itemDetail.images} />
                 </Grid>
                 <Grid item lg={6} xs={12}
-                    style={{
-                        padding: '20px 100px'
-                    }}
+                    // style={{
+                    //     padding: '20px 100px'
+                    // }}
+                    className={styles.detail}
                 >
                     <Typography variant='subtitle2'
                         style={{
